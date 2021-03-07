@@ -57,6 +57,13 @@ public class HatMenu : MonoBehaviour
         PlayerPrefs.SetInt("Czapka", 2);
         startPannel.SetActive(true);
     }
+    public void none()
+    {
+        
+        MenuPannel.SetActive(false);
+        PlayerPrefs.SetInt("Czapka", 0);
+        startPannel.SetActive(true);
+    }
     public void Devil()
     {
         devil.SetActive(true);
