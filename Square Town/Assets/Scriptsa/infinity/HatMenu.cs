@@ -53,7 +53,6 @@ public class HatMenu : MonoBehaviour
     public void Animal(){
         animal.SetActive(true);
         MenuPannel.SetActive(false);
-      
         PlayerPrefs.SetInt("Czapka", 2);
         startPannel.SetActive(true);
     }
