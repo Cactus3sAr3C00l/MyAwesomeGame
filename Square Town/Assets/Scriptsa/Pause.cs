@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public GameObject animal, devil, headphones, classic, StartPannel, rainbow;
-    public GameObject pausepanel, HatPannel;
+    public GameObject pausepanel, HatPannel, PAUSEBUTTON;
     public void PauseGame()
     {
         Debug.Log("pause");
@@ -27,7 +27,7 @@ public class Pause : MonoBehaviour
     }
     public void GoToHatMenu2()
     {
-        Time.timeScale = 0;
+      
         animal.SetActive(false);
         devil.SetActive(false);
         headphones.SetActive(false);

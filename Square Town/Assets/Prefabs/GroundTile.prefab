@@ -266,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935269397892431409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1935269398501157131}
@@ -352,6 +352,8 @@ MonoBehaviour:
   obstaclePrefab4: {fileID: 8829608085180772693, guid: 506824f933076f84d9f56650dd6693aa,
     type: 3}
   obstaclePrefab5: {fileID: 1060084179445298071, guid: d04dba127ebe997438fa816c4ffeb3db,
+    type: 3}
+  coinPrefab: {fileID: 3778011206602556301, guid: 33461a691a91b70448d0771e324e9168,
     type: 3}
 --- !u!1 &1935269398501157127
 GameObject:

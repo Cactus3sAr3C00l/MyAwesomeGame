@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Coins
     - Collision2
     - Credits
     - EndTrigger
@@ -136,17 +137,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14142}
     - Class: 114
-      Script: {instanceID: 14320}
+      Script: {instanceID: 14290}
     - Class: 114
-      Script: {instanceID: 14536}
+      Script: {instanceID: 14322}
     - Class: 114
       Script: {instanceID: 14538}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14540}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14758}
+    - Class: 114
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -239,11 +242,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -330,9 +333,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -423,11 +426,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -516,11 +519,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -609,11 +612,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -702,11 +705,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -795,11 +798,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -888,11 +891,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14148}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14686}
     - Class: 114
-      Script: {instanceID: 14756}
+      Script: {instanceID: 14758}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1009,23 +1012,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14136}
     - Class: 114
-      Script: {instanceID: 14368}
+      Script: {instanceID: 14370}
     - Class: 114
-      Script: {instanceID: 14552}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14594}
-    - Class: 114
-      Script: {instanceID: 14788}
+      Script: {instanceID: 14596}
     - Class: 114
       Script: {instanceID: 14790}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14792}
     - Class: 114
-      Script: {instanceID: 14838}
+      Script: {instanceID: 14820}
     - Class: 114
-      Script: {instanceID: 14950}
+      Script: {instanceID: 14840}
     - Class: 114
-      Script: {instanceID: 14956}
+      Script: {instanceID: 14952}
+    - Class: 114
+      Script: {instanceID: 14958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1078,9 +1081,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13242}
     - Class: 114
-      Script: {instanceID: 14456}
+      Script: {instanceID: 14458}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1274,7 +1277,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: b9051a50681411445bbbcfbf9a25ae77
+      Hash: 7d2e33758b07c98b6bdbabd542dd53e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StartINF
@@ -1724,7 +1727,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerVector2
   - hash:
       serializedVersion: 2
-      Hash: 15052f2598614aaf99a511683565a85e
+      Hash: 7665297facd3d1bece0be6e23ce5ad7d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Pause
@@ -1764,6 +1767,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: LiftGammaGain
+  - hash:
+      serializedVersion: 2
+      Hash: 13f8f373b951cbaf0f891949929b196a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Coins
   - hash:
       serializedVersion: 2
       Hash: d409999e69f2bba6a31bddcdc9f52923
@@ -1814,13 +1823,13 @@ ScriptsOnlyBuild:
     className: ShadowCaster2D
   - hash:
       serializedVersion: 2
-      Hash: d1786db163fabbd5778108db318bfacb
+      Hash: e3cb9df05fa111a7d8beb688b095b12a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GroundTile
   - hash:
       serializedVersion: 2
-      Hash: 6ea6e768e4666bd59b2a5c469edea03c
+      Hash: 1909e66e6c176a167fbc0db557e4af1d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManagerInf

@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
    
     void Update()
     {
-        scoreText.text = (player.position.z + 129).ToString("0");
+        scoreText.text = (player.position.z - 10).ToString("0");
      
         
     }

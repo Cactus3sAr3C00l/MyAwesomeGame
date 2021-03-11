@@ -754,7 +754,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: That's Cubee
+  m_Text: SQUARE TOWN
 --- !u!222 &1447366492
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -10,14 +10,30 @@ public class GameManagerInf : MonoBehaviour
     public GameObject completeLevelUI;
     public Movement movement;
     public Text highscore;
-
+    public Text money;
+    int coincounter;
+    public static GameManagerInf inst;
     public Transform player;
     // Start is called before the first frame update
     private void Start()
     {
 
         highscore.text = PlayerPrefs.GetFloat("HighScore", 0).ToString("0");
+        money.text = PlayerPrefs.GetInt("coins",0).ToString("0");
+        coincounter = PlayerPrefs.GetInt("coins", 0);
 
+    }
+    private void Awake()
+    {
+        inst = this;
+        
+    }
+    public void IncrementCoins()
+    {
+        coincounter++;
+        Debug.Log(coincounter);
+        Debug.Log("^");
+        PlayerPrefs.SetInt("coins", coincounter);
     }
     public void CompleteLevel()
     {
@@ -93,6 +109,10 @@ public class GameManagerInf : MonoBehaviour
         Time.timeScale = 1;
         Application.Quit();
 
+    }
+    private void Update()
+    {
+        money.text = coincounter.ToString();
     }
 
 }
