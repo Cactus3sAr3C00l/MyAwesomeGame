@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Coins : MonoBehaviour
 {
     int coincounter;
@@ -20,10 +21,11 @@ public class Coins : MonoBehaviour
     {
         
         if (other.gameObject.name == "Player")
-        {
+         if (SceneManager.GetActiveScene().buildIndex == 1) { 
             GameManagerInf.inst.IncrementCoins();
            
         }
+            else GameManager.inst.IncrementCoins();
 
 
 

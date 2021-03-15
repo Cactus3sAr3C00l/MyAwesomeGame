@@ -1,0 +1,47 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class unlock : MonoBehaviour
+{
+    public GameObject gameobj;
+    int temp;
+    public Text money;
+    // Start is called before the first frame update
+    bool can;
+    static bool no;
+   
+
+    void Start()
+    {
+        string n = gameobj.ToString();
+        can = no;
+        if(PlayerPrefs.GetInt(n, 0) == 1)
+        {
+            gameobj.SetActive(false);
+        }
+       
+    }
+    public void Unlock()
+    {
+       
+
+        if (PlayerPrefs.GetInt("coins",0)  >= 50 )
+        {
+
+
+            string n = gameobj.ToString();
+            gameobj.SetActive(false);
+            DontDestroyOnLoad(gameobj);
+            
+            PlayerPrefs.SetInt(n, 1);
+            
+        }
+        
+    }
+    
+
+
+
+}

@@ -10,7 +10,27 @@ public class GameManager : MonoBehaviour
     public float restartDelay=1f;
     public GameObject completeLevelUI;
     public Movement movement;
-  
+    public Text money;
+    int coincounter;
+    public static GameManager inst;
+    private void Awake()
+    {
+        inst = this;
+
+    }
+    private void Update()
+    {
+        coincounter = PlayerPrefs.GetInt("coins", 0);
+        money.text = coincounter.ToString();
+    }
+    public void IncrementCoins()
+    {
+        coincounter++;
+        Debug.Log(coincounter);
+        Debug.Log("^");
+        PlayerPrefs.SetInt("coins", coincounter);
+    }
+
     public Transform player;
     // Start is called before the first frame update
     
@@ -21,7 +41,12 @@ public class GameManager : MonoBehaviour
         movement.enabled = false;
 
     }
-   public void EndGame()
+    private void Start()
+    {
+        money.text = PlayerPrefs.GetInt("coins", 0).ToString("0");
+        coincounter = PlayerPrefs.GetInt("coins", 0);
+    }
+    public void EndGame()
     {
         if (gameHasEnded == false)
         {

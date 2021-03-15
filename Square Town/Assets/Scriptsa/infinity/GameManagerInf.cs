@@ -7,13 +7,15 @@ public class GameManagerInf : MonoBehaviour
 {
     bool gameHasEnded = false;
     public float restartDelay = 1f;
-    public GameObject completeLevelUI;
+    public GameObject completeLevelUI, hatpannel;
     public Movement movement;
     public Text highscore;
     public Text money;
-    int coincounter;
+   public int coincounter;
     public static GameManagerInf inst;
     public Transform player;
+    int cost;
+    public HatMenu var;
     // Start is called before the first frame update
     private void Start()
     {
@@ -112,7 +114,13 @@ public class GameManagerInf : MonoBehaviour
     }
     private void Update()
     {
-        money.text = coincounter.ToString();
+       
+            coincounter = PlayerPrefs.GetInt("coins", 0); 
+            PlayerPrefs.SetInt("coins", coincounter);
+            money.text = PlayerPrefs.GetInt("coins", 0).ToString();
+        
     }
+   
+
 
 }
