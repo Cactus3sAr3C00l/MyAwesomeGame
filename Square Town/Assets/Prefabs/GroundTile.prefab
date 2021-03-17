@@ -343,9 +343,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 378e881e40d71264f94a85e2a241e3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 6961564138880021819, guid: 8ebef66ad8457f2458895ec4f97c001e,
+  obstaclePrefab: {fileID: 9005739816261906625, guid: 7aa2933ad6bde864182c37044286fe1f,
     type: 3}
-  obstablePrefab2: {fileID: 4401732032069323172, guid: 9e850e2335f720742a21679d82d5c8f7,
+  obstablePrefab2: {fileID: 1281426841877422597, guid: 12cc84eaa24506249b7bee33eb4711a3,
     type: 3}
   obstaclePrefab3: {fileID: 5380420798985487532, guid: 429b6cf50a3b5f247bb9f6ce0044f192,
     type: 3}
@@ -414,7 +414,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 742a42211dab76e48962d1760024a761, type: 2}
+  - {fileID: 2100000, guid: 96faa1f28f31aa84a85ac1a4891ca28f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

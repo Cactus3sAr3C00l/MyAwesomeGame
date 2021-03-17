@@ -6,13 +6,13 @@ public class GroundTile : MonoBehaviour
 
 
     GroundSpawner groundspawner;
-   
+
     public GameObject obstaclePrefab, obstablePrefab2, obstaclePrefab3, obstaclePrefab4, obstaclePrefab5, coinPrefab;
     void Start()
     {
         groundspawner = GameObject.FindObjectOfType<GroundSpawner>();
-        SpawnCoins();
 
+        SpawnCoins();
 
     }
 
@@ -21,7 +21,6 @@ public class GroundTile : MonoBehaviour
     {
         
          groundspawner.SpawnTile(true);
-     
         Destroy(gameObject, 2f);
         
     }
@@ -39,48 +38,49 @@ public class GroundTile : MonoBehaviour
         {
             Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
             Instantiate(obstablePrefab2, spawnPoint.position, obstablePrefab2.transform.rotation);
+           
         }
         else if (obstacleSpawnIndex > 15 && obstacleSpawnIndex < 26)
         {
             Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
             Instantiate(obstaclePrefab3, spawnPoint.position ,obstaclePrefab3.transform.rotation);
+            
         }
         else if (obstacleSpawnIndex < 15 &&   obstacleSpawnIndex > 10)
         {
             Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
-            Instantiate(obstaclePrefab4, spawnPoint.position, obstaclePrefab4.transform.rotation);
+             Instantiate(obstaclePrefab4, spawnPoint.position, obstaclePrefab4.transform.rotation);
+            
         }
         else if (obstacleSpawnIndex < 28 && obstacleSpawnIndex > 26 )
         {
             Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
-            Instantiate(obstaclePrefab4, spawnPoint.position, obstaclePrefab4.transform.rotation);
+           Instantiate(obstaclePrefab4, spawnPoint.position, obstaclePrefab4.transform.rotation);
+           
         }
         else if(obstacleSpawnIndex<37 && obstacleSpawnIndex > 28)
         {
             Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
-           
-            Instantiate(obstaclePrefab.transform.GetChild(0), spawnPoint.position, obstaclePrefab.transform.rotation);
+
+           Instantiate(obstaclePrefab.transform, spawnPoint.position, obstaclePrefab.transform.rotation);
+            
         }
         else if (obstacleSpawnIndex >36 )
         {
             Debug.Log("Nic22");
         }
-        else 
-        {
-            Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
-            Instantiate(obstaclePrefab3, spawnPoint.position, obstaclePrefab3.transform.rotation);
-        }
+       
 
 
     }
    void SpawnCoins()
     {
-        int coinsToSpawn = 1;
-        for (int i = 0; i < coinsToSpawn; i++)
-        {
+       
+      
             GameObject temp = Instantiate(coinPrefab);
             temp.transform.position = GetRandomPoint(GetComponent<Collider>());
-        }
+       
+
 
     }
     Vector3 GetRandomPoint(Collider collider)

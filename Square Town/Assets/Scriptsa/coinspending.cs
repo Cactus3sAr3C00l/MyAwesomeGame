@@ -7,6 +7,7 @@ public class coinspending : MonoBehaviour
     // Start is called before the first frame update
     int cost;
     int coincounter;
+
     public void buyHat()
     {
         if (PlayerPrefs.GetInt("coins", 0) >= 50)
