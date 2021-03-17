@@ -6073,7 +6073,7 @@ MonoBehaviour:
   ForwardSpeed: 4100
   Right: 20
   Left: -20
-  Up: 400
+  Up: 150
   player: {fileID: 1901219874}
   AllowJumping: 1
   score2: 0
