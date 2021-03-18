@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public Rigidbody rb;
     public float ForwardSpeed= 1400f;
     public float Right = 500f, Left = -500f;
-    float Up= 170f , checkjump;
+    float Up= 210f , checkjump;
     public Transform player;
      bool AllowJumping=false;
     public float score2 = 0;

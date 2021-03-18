@@ -67,7 +67,9 @@ public class GroundTile : MonoBehaviour
         }
         else if (obstacleSpawnIndex >36 )
         {
-            Debug.Log("Nic22");
+            Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
+
+            Instantiate(obstaclePrefab5.transform, spawnPoint.position, obstaclePrefab5.transform.rotation);
         }
        
 
