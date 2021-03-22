@@ -10,7 +10,7 @@ public class coinspending : MonoBehaviour
 
     public void buyHat()
     {
-        if (PlayerPrefs.GetInt("coins", 0) >= 50)
+        if (PlayerPrefs.GetInt("coins", 0) >= 200)
         {
             Cost();
             coincounter = PlayerPrefs.GetInt("coins", 0);
@@ -19,8 +19,20 @@ public class coinspending : MonoBehaviour
 
         }    }
 
+    public void buyPlatform()
+    {
+        if (PlayerPrefs.GetInt("coins", 0) >= 320)
+        {
+            cost = 320;
+            coincounter = PlayerPrefs.GetInt("coins", 0);
+            coincounter = coincounter - cost;
+            PlayerPrefs.SetInt("coins", coincounter);
+
+        }
+    }
+
     void Cost()
     {
-        cost = 50;
+        cost = 200;
     }
 }

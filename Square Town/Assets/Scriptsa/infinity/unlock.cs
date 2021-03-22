@@ -18,8 +18,18 @@ public class unlock : MonoBehaviour
     }
     public void Unlock()
     {
-        if (PlayerPrefs.GetInt("coins",0)  >= 50 )
+        if (PlayerPrefs.GetInt("coins",0)  >= 200 )
         { 
+            string n = gameobj.ToString();
+            gameobj.SetActive(false);
+            DontDestroyOnLoad(gameobj);
+            PlayerPrefs.SetInt(n, 1);
+        }
+    }
+    public void UnlockPlatform()
+    {
+        if (PlayerPrefs.GetInt("coins", 0) >= 320)
+        {
             string n = gameobj.ToString();
             gameobj.SetActive(false);
             DontDestroyOnLoad(gameobj);

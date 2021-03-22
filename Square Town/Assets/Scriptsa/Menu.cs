@@ -8,6 +8,16 @@ public class Menu : MonoBehaviour
 {
     public Text money;
     // Start is called before the first frame update
+
+    public GameObject pannel;
+    public void setPannel()
+    {
+        pannel.SetActive(true);
+    }
+    public void leavePannel()
+    {
+        pannel.SetActive(false);
+    }
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -9,7 +9,7 @@ public class TerrainChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerPrefs.GetInt("Terrain", 2)== 1)
+        if(PlayerPrefs.GetInt("Terrain", 3)== 1)
         {
             o1.SetActive(true);
             o2.SetActive(false);
@@ -23,14 +23,14 @@ public class TerrainChange : MonoBehaviour
             o3.SetActive(false);
             o4.SetActive(false);
         }
-        if (PlayerPrefs.GetInt("Terrain", 2) == 3)
+        if (PlayerPrefs.GetInt("Terrain", 3) == 3)
         {
             o1.SetActive(false);
             o2.SetActive(false);
             o3.SetActive(true);
             o4.SetActive(false);
         }
-        if (PlayerPrefs.GetInt("Terrain", 2) == 4)
+        if (PlayerPrefs.GetInt("Terrain", 3) == 4)
         {
             o1.SetActive(false);
             o2.SetActive(false);

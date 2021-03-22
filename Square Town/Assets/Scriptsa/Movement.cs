@@ -34,13 +34,13 @@ public class Movement : MonoBehaviour
             }
 
 
-            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
             {
 
                 endtouchpos = Input.GetTouch(0).position;
 
 
-                if (endtouchpos.y - startTouchPos.y > 60)
+                if (endtouchpos.y - startTouchPos.y > 30)
                 {
                     if (rb.position.y < 1.02 && rb.position.y > -1 && player.position.x < 9 && player.position.x > -9)
                     {
@@ -75,7 +75,7 @@ public class Movement : MonoBehaviour
 
         
        
-        if(SceneManager.GetActiveScene().buildIndex == 1 && (score2%5 == 0) && score2 != 0 && i != score2)
+        if(SceneManager.GetActiveScene().buildIndex == 1 && (score2%5 == 0) && score2 != 0 && i != score2 && ForwardSpeed< 7800f)
            {
 
             ForwardSpeed += 250f;

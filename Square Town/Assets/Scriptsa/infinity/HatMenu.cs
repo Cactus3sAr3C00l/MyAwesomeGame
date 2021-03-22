@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HatMenu : MonoBehaviour
 {
@@ -85,7 +86,9 @@ public class HatMenu : MonoBehaviour
     public void leave()
     {
         MenuPannel.SetActive(false);
-        startPannel.SetActive(true);
+      
+            startPannel.SetActive(true);
+        
         Check();
     }
 
